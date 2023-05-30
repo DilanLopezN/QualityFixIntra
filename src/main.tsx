@@ -1,10 +1,11 @@
 import ReactDOM from 'react-dom/client'
-import App from './App.tsx'
 import { ChakraProvider } from '@chakra-ui/react'
+import { RouterProvider } from 'react-router-dom'
+import { router } from './Router.tsx'
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <ChakraProvider>
-     <App />
+     <RouterProvider router={router} />
   </ChakraProvider>
   
 )
