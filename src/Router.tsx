@@ -1,0 +1,11 @@
+import { Routes, Route } from "react-router-dom";
+import { SignIn } from "./pages/Signin";
+
+export function Router() {
+  return (
+    <Routes>
+        <Route path="/" element={<SignIn/>} /> 
+      </Routes>
+  )
+  
+}
