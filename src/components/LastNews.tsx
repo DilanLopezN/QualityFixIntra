@@ -1,5 +1,5 @@
 import { Flex, Image, Text } from "@chakra-ui/react";
-import Example from '../assets/expost1.jpg'
+import Example from '../assets/expost1.jpg';
 export function LastNews() {
   return (
     <div>

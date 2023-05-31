@@ -16,7 +16,7 @@ export function Calendar() {
     <Tbody>
       <Tr>
         <Td>1 de janeiro</Td>
-        <Td>Ano Novo</Td>
+        <Td>Ano Novo</Td>P
       </Tr>
       <Tr>
         <Td>21 de abril</Td>

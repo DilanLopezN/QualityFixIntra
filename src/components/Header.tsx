@@ -1,7 +1,7 @@
 import '../styles/header.css'
 import { useNavigate } from 'react-router-dom'
 import { Button, Flex } from '@chakra-ui/react'
-import { RiSearchLine} from 'react-icons/ri'
+import { RiSearchLine } from 'react-icons/ri'
 import { Input } from './Input'
 interface HeaderProps {
   title: string
