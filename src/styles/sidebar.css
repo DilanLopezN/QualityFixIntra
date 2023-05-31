@@ -49,10 +49,6 @@ width: 2rem;
 height: 2rem;
 }
 
-.mainNavigation a.active {
-color: var(--twitter-blue);
-}
-
 @media (max-width: 780px) {
 .sidebar {
   padding: 1.5rem 0.75rem;

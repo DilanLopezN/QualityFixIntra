@@ -2,11 +2,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-style: Roboto, sans-serif;
-}
-
-:root {
-  --twitter-blue: #1da1f2;
+  font-family: 'Open Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
 }
 
 body {
@@ -28,5 +25,5 @@ body,
 input,
 textarea,
 button {
-  font: 400 1rem Roboto, sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
