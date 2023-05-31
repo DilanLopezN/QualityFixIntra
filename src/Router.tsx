@@ -7,6 +7,8 @@ import { AdminLayout } from "./layouts/Admin";
 import { AdminDash } from "./pages/AdminDash";
 import { Calendar } from "./pages/Calendar";
 import { Documents } from "./pages/Documents";
+import { SystemLayout } from "./layouts/Sistem";
+import { NewSystem } from "./pages/NewSystem";
 
 export const router = createBrowserRouter([
   {
@@ -60,6 +62,16 @@ export const router = createBrowserRouter([
       {
         path: '/Documents',
         element: <Documents/>
+      }
+    ]
+  },
+  {
+    path: '/Sistem',
+    element: <SystemLayout/>,
+    children: [
+      {
+        path: "/Sistem",
+        element: <NewSystem />
       }
     ]
   }

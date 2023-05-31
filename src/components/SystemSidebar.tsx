@@ -1,17 +1,15 @@
 import { NavLink } from 'react-router-dom'
 import { Image } from '@chakra-ui/react'
 import {
-  House,
-  Hash,
-  FileText,
-  CalendarCheck,
-  Monitor
+  House
 } from 'phosphor-react'
-import { MdOutlineAdminPanelSettings } from 'react-icons/md'
+import { BiMoney } from 'react-icons/bi'
+import { TbReportSearch } from 'react-icons/tb'
+import { GrResources, GrConfigure } from 'react-icons/gr'
 import '../styles/sidebar.css'
 import Logo from '../assets/logo.png'
 
-export function Sidebar() {
+export function SystemSidebar() {
   return (
     <aside className="sidebar">
       <Image
@@ -24,7 +22,7 @@ export function Sidebar() {
         alt="Logo"
       />
       <nav className="mainNavigation">
-        <NavLink  to="/Home"
+        <NavLink  to="/Sistem"
         style={({ isActive }) => {
           return {
             color: isActive ? "#f5c420" : "black",
@@ -32,53 +30,50 @@ export function Sidebar() {
         }}
         >
           <House weight="fill" />
-          <span> Home</span>
+          <span> Dashboard</span>
         </NavLink>
-        <NavLink to="/Announcements"
+        <NavLink to="/Finance"
         style={({ isActive }) => {
           return {
             color: isActive ? "#f5c420" : "black",
           };
         }}
         >
-          <Hash />
-          <span>Comunicados</span>
+          <BiMoney />
+          <span>Financeiro</span>
         </NavLink>
 
-        <NavLink to="/Calendar"
+        <NavLink to="/Reports"
             style={({ isActive }) => {
               return {
                 color: isActive ? "#f5c420" : "black",
               };
             }}
         >
-          <CalendarCheck />
-          <span>Calendário</span>
+          <TbReportSearch />
+          <span>Relatórios</span>
         </NavLink>
-        <NavLink to="/Documents"
+        <NavLink to="/HumanResources"
          style={({ isActive }) => {
           return {
             color: isActive ? "#f5c420" : "black",
           };
         }}
         >
-          <FileText />
-          <span>Documentos</span>
+          <GrResources />
+          <span>Recursos Humanos</span>
         </NavLink>
-        <NavLink to="/Admin"
+        <NavLink to="/Configs"
         style={({ isActive }) => {
           return {
             color: isActive ? "#f5c420" : "black",
           };
         }}
         >
-          <MdOutlineAdminPanelSettings />
-          <span>Administrativo</span>
+          <GrConfigure />
+          <span>Configurações</span>
         </NavLink>
-        <NavLink to="/Sistem" target='_blank'>
-          <Monitor />
-          <span>Sistema</span>
-        </NavLink>
+   
       </nav>
     
     </aside>
