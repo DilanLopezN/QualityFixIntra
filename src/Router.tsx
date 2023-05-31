@@ -9,6 +9,8 @@ import { Calendar } from "./pages/Calendar";
 import { Documents } from "./pages/Documents";
 import { SystemLayout } from "./layouts/Sistem";
 import { NewSystem } from "./pages/NewSystem";
+import { NotFoundLayout } from "./layouts/Notfound";
+import { NotFound } from "./pages/NotFound";
 
 export const router = createBrowserRouter([
   {
@@ -72,6 +74,16 @@ export const router = createBrowserRouter([
       {
         path: "/Sistem",
         element: <NewSystem />
+      }
+    ]
+  },
+  {
+    path: '*',
+    element: <NotFoundLayout />,
+    children: [
+      {
+        path: '*',
+        element: <NotFound/>
       }
     ]
   }

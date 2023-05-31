@@ -45,6 +45,7 @@ export function SystemSidebar() {
           <span> Dashboard</span>
         </NavLink>
         <NavLink to="/Finance"
+          aria-disabled="true"
         style={({ isActive }) => {
           return {
             color: isActive ? "#f5c420" : "black",
