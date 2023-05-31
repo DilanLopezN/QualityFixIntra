@@ -7,7 +7,7 @@ export function LastNews() {
 
      <Flex m="4" direction="column" border="1px"
     
-
+    _hover={{ boxShadow: "rgba(0, 255, 255, 0.2) 0px 7px 29px 0px" }}
       borderColor="gray.200"
       boxShadow="rgba(100, 100, 111, 0.2) 0px 7px 29px 0px"
      rounded="4" p="2">

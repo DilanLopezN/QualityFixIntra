@@ -6,7 +6,7 @@ export function Announcements(){
   return (
     <>
       <Header title="Comunicados" />
-      <Flex m="4" direction="column" overflow="auto" height={800}>
+      <Flex m="4" direction="column" overflow="auto" height={800} >
         <Image src={ExComunicado} />
         <Image src={ExComunicado2} />
       </Flex>

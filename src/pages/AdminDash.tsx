@@ -7,7 +7,7 @@ export function AdminDash() {
   return (
     <>
     <Header title="Painel Administrativo"/>
-    <Flex m="4" direction="column">
+    <Flex m="4" direction="column" height={800} >
       <Text mb="2" fontWeight="bold">Acrescentar nova noticia</Text>
       <FormControl>
         <Input name="title" label="Titulo da noticia" />

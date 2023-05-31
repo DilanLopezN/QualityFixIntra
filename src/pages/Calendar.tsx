@@ -5,7 +5,7 @@ export function Calendar() {
   return (
     <>
     <Header title="Calendário"/>
-      <Flex m="4">
+      <Flex m="4" height={800} >
       <Table>
     <Thead>
       <Tr>

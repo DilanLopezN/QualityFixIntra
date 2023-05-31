@@ -4,7 +4,6 @@ import {
   House,
   Hash,
   FileText,
-  Pencil,
   CalendarCheck,
   Monitor
 } from 'phosphor-react'

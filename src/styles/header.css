@@ -6,6 +6,7 @@
   font-size: 1.25;
   font-weight: 700;
   border-bottom: 1px solid #1a3b5c;
+  gap: 0.5rem
 }
 
 .timeLineHeader svg {
