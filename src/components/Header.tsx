@@ -1,4 +1,3 @@
-import { Sparkle } from 'phosphor-react'
 import '../styles/header.css'
 import { useNavigate } from 'react-router-dom'
 import { Button, Flex } from '@chakra-ui/react'
