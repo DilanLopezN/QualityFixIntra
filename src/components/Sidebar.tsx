@@ -53,7 +53,7 @@ export function Sidebar() {
             }}
         >
           <CalendarCheck />
-          <span>Caledário</span>
+          <span>Calendário</span>
         </NavLink>
         <NavLink to="/Documents"
          style={({ isActive }) => {
