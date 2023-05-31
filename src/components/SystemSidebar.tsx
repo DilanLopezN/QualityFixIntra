@@ -6,6 +6,7 @@ import {
 import { BiMoney } from 'react-icons/bi'
 import { TbReportSearch } from 'react-icons/tb'
 import { GrResources, GrConfigure } from 'react-icons/gr'
+import {MdOutlineDashboard} from 'react-icons/md'
 import '../styles/sidebar.css'
 import Logo from '../assets/logo.png'
 
@@ -22,7 +23,8 @@ export function SystemSidebar() {
         alt="Logo"
       />
       <nav className="mainNavigation">
-        <NavLink  to="/Sistem"
+
+      <NavLink  to="/Home"
         style={({ isActive }) => {
           return {
             color: isActive ? "#f5c420" : "black",
@@ -30,6 +32,16 @@ export function SystemSidebar() {
         }}
         >
           <House weight="fill" />
+          <span> Home</span>
+        </NavLink>
+        <NavLink  to="/Sistem"
+        style={({ isActive }) => {
+          return {
+            color: isActive ? "#f5c420" : "black",
+          };
+        }}
+        >
+          <MdOutlineDashboard weight="fill" />
           <span> Dashboard</span>
         </NavLink>
         <NavLink to="/Finance"

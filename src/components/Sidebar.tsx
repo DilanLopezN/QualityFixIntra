@@ -75,7 +75,7 @@ export function Sidebar() {
           <MdOutlineAdminPanelSettings />
           <span>Administrativo</span>
         </NavLink>
-        <NavLink to="/Sistem" target='_blank'>
+        <NavLink to="/Sistem">
           <Monitor />
           <span>Sistema</span>
         </NavLink>
